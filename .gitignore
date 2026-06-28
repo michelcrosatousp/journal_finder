@@ -1,0 +1,19 @@
+# Senha de acesso — nunca versionar (cadastrar no painel Secrets do Streamlit Cloud)
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+
+# Arquivos-fonte brutos das bases (grandes/licenciados; não vão para a nuvem)
+*.xlsx
+*.csv
+JCR_JournalImpactFactor_2026.pdf
+13052025_antoniogomes06maiodav.pdf
+
+# JSONs intermediários (gerados pelo build_data.py; não usados em produção)
+jcr_data.json
+qualis_data.json
+scimago_data.json
+
+# Em produção o app usa apenas journals_data.json (NÃO ignorar este)
